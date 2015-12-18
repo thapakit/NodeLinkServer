@@ -5,8 +5,8 @@ block content
     form.form-inline
       label เลือกหน่วยบริการ &nbsp;
       select.form-control(style="width: 400px;", ng-model="hospcode")
+        option(value="") เลือกหน่วยบริการ
         for h in hospitals
-          option(value="") เลือกหน่วยบริการ
           option(value="#{h.hospcode}") #{h.name}
       //- select.form-control(style="width: 400px;", ng-model="hospcode" ng-options="hospital.hospcode as hospital.name for hospital in hospitals")
       | &nbsp;
